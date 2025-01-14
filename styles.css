@@ -144,7 +144,8 @@ span{
     }
     .white{
         width: 60rem;
-        height: 18rem;
+        height: 20rem;
+        padding: 4rem;
         grid-area: white;
     }
     .white h2,.white p{
@@ -153,14 +154,21 @@ span{
     .cyan{
         grid-area: cyan;
         width: 30rem;
+        height: 24rem;
+        padding: 4rem;
         border-radius: 0 0 0 0.5rem;
+    }
+    .cyan div{
+        margin: 3rem 0 2rem 0;
     }
     .light{
         grid-area: light;
         width: 30rem;
         border-radius: 0 0 0.5rem 0 ;
+        padding: 4rem;
+        height: 24rem;
     }
     .light p{
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 }

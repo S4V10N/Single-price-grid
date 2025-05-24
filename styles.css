@@ -9,7 +9,7 @@
     /* ### Primary */
     --CYAN: hsl(179, 62%, 43%);
     --BRIGHT-YELLOW: hsl(71, 73%, 54%);
-    --LIGHT-CYAN: hsl(179, 36%, 53%);
+    --LIGHT-CYAN: hsla(179, 62%, 43%, 0.700);
 
     /* ### Neutral */
     --LIGHT-GRAY: hsl(204, 43%, 93%);
@@ -22,6 +22,9 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: "Karla", serif;
+}
+main {
+    margin-bottom: 6rem;
 }
 .white{
     background-color: white;
@@ -58,6 +61,14 @@ h1{
     background-color: beige;
     padding: 2rem;
 }
+footer p, footer a{
+    font-size: 1.4rem;
+}
+.attribution a { 
+    color: rgb(155, 85, 155);
+    text-decoration: none;
+    
+}
 .cyan{
     background-color: var(--CYAN);
 }
@@ -87,9 +98,10 @@ span{
 }
 .cyan div{
     background-color: var(--BRIGHT-YELLOW);
-    height: 4rem;
+    height: 5rem;
     max-width: 28rem;
     border-radius: 0.8rem;
+    transform: translateY(-2rem);
     display: grid;
     place-content: center;
     margin-top: 4.5rem;
@@ -113,7 +125,7 @@ span{
 .light p{
     font-size: 1.4rem;
     line-height: 1.4em;
-    color:  hsl(218, 71%, 86%);
+    color:  var(--LIGHT-GRAY);
 }
 @media (min-width: 600px) {
     body{
@@ -159,7 +171,8 @@ span{
         border-radius: 0 0 0 0.5rem;
     }
     .cyan div{
-        margin: 3rem 0 2rem 0;
+        margin: 0rem 0 2rem 0;
+        transform: translateY(2.5rem);
     }
     .light{
         grid-area: light;
